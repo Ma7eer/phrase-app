@@ -1,18 +1,19 @@
 import React from 'react'
 
+import {FilterProvider} from './context/filterContext'
 import Header from './components/Header'
 import Tags from './components/Tags'
 import Cards from './components/Cards'
-
-import './App.css'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="App">
+    <FilterProvider>
       <Header />
       <Tags />
       <Cards />
-    </div>
+      <Footer />
+    </FilterProvider>
   )
 }
 

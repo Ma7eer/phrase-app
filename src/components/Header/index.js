@@ -1,5 +1,7 @@
 import React from 'react'
 
-const Header = () => <h1>عبارات</h1>
+import * as S from './style.js'
+
+const Header = () => <S.Title>عبارات</S.Title>
 
 export default Header

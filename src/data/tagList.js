@@ -1,4 +1,8 @@
 export default {
+  funeral: {
+    tag: 'عزاء',
+    emoji: '👋',
+  },
   greeting: {
     tag: 'ترحيب',
     emoji: '👋',
@@ -15,4 +19,8 @@ export default {
     tag: 'سنة جديدة',
     emoji: '👋',
   },
+  // all: {
+  //   tag: 'جميع العبارات',
+  //   emoji: '👋',
+  // },
 }
