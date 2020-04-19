@@ -12,6 +12,9 @@ https://stackoverflow.com/questions/14810506/map-function-for-objects-instead-of
 */
 
 const countOccurrence = str => {
+  if (str === 'جميع العبارات') {
+    return countTotal()
+  }
   let counter = 0
   phraseList.forEach(list => {
     for (let val of list.tags) {
@@ -32,7 +35,7 @@ const countTotal = () => {
 }
 
 const TagsList = () => {
-  const {currentTag, setCurrentTag} = useContext(FilterContext)
+  const {currentTag, setCurrentTag, setPhrases} = useContext(FilterContext)
 
   return (
     <S.Tags>
@@ -44,23 +47,35 @@ const TagsList = () => {
               type="radio"
               value={tagList[key].tag}
               name="tag"
-              onChange={e => setCurrentTag(e.currentTarget.value)}
+              onChange={e => {
+                let t = e.currentTarget.value
+                setCurrentTag(t)
+                setPhrases(() => {
+                  if (t === 'جميع العبارات') {
+                    return phraseList
+                  }
+                  return phraseList.filter(phrase => phrase.tags.includes(t))
+                })
+              }}
             />
             <S.TagCount>{countOccurrence(tagList[key].tag)}</S.TagCount>
           </S.Tag>
         )
       })}
       {/* 'all' case */}
-      <S.Tag currentTag={currentTag === 'جميع العبارات'}>
+      {/* <S.Tag currentTag={currentTag === 'جميع العبارات'}>
         جميع العبارات
         <input
           type="radio"
           value="جميع العبارات"
           name="tag"
-          onChange={e => setCurrentTag(e.currentTarget.value)}
+          onChange={e => {
+            setCurrentTag(e.currentTarget.value)
+            setPhrases('جميع العبارات')
+          }}
         />
         <S.TagCount>{countTotal()}</S.TagCount>
-      </S.Tag>
+      </S.Tag> */}
     </S.Tags>
   )
 }

@@ -6,7 +6,7 @@ export const Tags = styled.ul`
   padding: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
 `
 
 export const Tag = styled.label`

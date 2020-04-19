@@ -6,16 +6,21 @@ export default [
   {
     phrase: 'السلام عليكم',
     response: 'وعليكم السلام',
-    tags: [greeting.tag, 'جميع العبارات'],
+    tags: [greeting.tag],
   },
   {
     phrase: 'كل عام وانت بخير',
     response: 'وانت بخير',
-    tags: [ramadan.tag, Eid.tag, NewYears.tag, 'جميع العبارات'],
+    tags: [ramadan.tag, Eid.tag, NewYears.tag],
   },
   {
     phrase: 'رمضان كريم',
     response: 'ينعاد علينا وعليكم',
-    tags: [ramadan.tag, 'جميع العبارات'],
+    tags: [ramadan.tag],
+  },
+  {
+    phrase: 'من العايدين الفايزين',
+    response: 'ما اعرف',
+    tags: [Eid.tag],
   },
 ]

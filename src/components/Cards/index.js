@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect} from 'react'
+import React, {useState, useContext} from 'react'
 import PropTypes from 'prop-types'
 import ReactCardFlip from 'react-card-flip'
 
@@ -6,19 +6,8 @@ import FilterContext from '../../context/filterContext'
 
 import * as S from './style'
 
-import phraseList from '../../data/phraseList'
-
 const CardsList = () => {
-  const {currentTag} = useContext(FilterContext)
-  const [phrases, setPhrases] = useState(phraseList)
-  // console.log(currentTag)
-  useEffect(() => {
-    setPhrases(prevState => {
-      let x = prevState.filter(phrase => phrase.tags.includes(currentTag))
-      console.log(x)
-      return x
-    })
-  }, [])
+  const {phrases} = useContext(FilterContext)
   return (
     <S.Cards>
       {phrases.map((list, index) => {
