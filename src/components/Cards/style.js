@@ -28,6 +28,8 @@ export const CardFront = styled.div`
   /* card size */
   width: 18rem;
   height: 12rem;
+
+  z-index: 1;
 `
 export const CardBack = styled.div`
   background-color: var(--white);
@@ -48,4 +50,20 @@ export const CardBack = styled.div`
   /* card size */
   width: 18rem;
   height: 12rem;
+`
+
+export const voiceActivator = styled.span`
+  position: fixed;
+  bottom: 10px;
+  right: 80%;
+  padding: 10px;
+  z-index: 2;
+  &::before {
+    content: '🔈';
+  }
+  &:hover {
+    &::before {
+      content: '🔊';
+    }
+  }
 `
