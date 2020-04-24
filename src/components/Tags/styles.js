@@ -21,6 +21,7 @@ export const Tag = styled.label`
   input {
     display: none;
   }
+
   ${props =>
     props.currentTag &&
     `
@@ -29,6 +30,10 @@ export const Tag = styled.label`
     color: var(--tag-text-highlighted);
     text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
+
+    -webkit-box-shadow: -1px 1px 0px 0px black;
+    -moz-box-shadow: -1px 1px 0px 0px black;
+    box-shadow: -1px 1px 0px 0px black;
   `}
 `
 
