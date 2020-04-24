@@ -1,4 +1,20 @@
 export default {
+  goodNews: {
+    tag: 'اخبار سارة',
+    emoji: '👋',
+  },
+  sicknessOrInjury: {
+    tag: 'مرض او اصابة',
+    emoji: '👋',
+  },
+  newBorn: {
+    tag: 'مولود جديد',
+    emoji: '👋',
+  },
+  wedding: {
+    tag: 'عرس',
+    emoji: '👋',
+  },
   funeral: {
     tag: 'عزاء',
     emoji: '👋',

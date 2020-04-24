@@ -40,7 +40,7 @@ body {
 `
 
 const theme = {
-  second_theme: {
+  accent_theme: {
     header_text: 'white',
 
     tag_background: '#6B727F',
@@ -51,7 +51,7 @@ const theme = {
     tag_counter_text: 'black',
 
     card_front_background: '#FED766',
-    card_front_text: 'black',
+    card_front_text: 'white',
     card_front_text_underline: '#BF1A2F',
     card_front_border: 'rgb(238, 238, 238)',
     card_back_background: 'white',
@@ -103,7 +103,7 @@ const theme = {
 
     background: '#122C34',
   },
-  fifth_theme: {
+  main_theme: {
     header_text: 'white',
 
     tag_background: '#44CFCB',
@@ -122,13 +122,13 @@ const theme = {
     card_back_text_underline: '#44CFCB',
     card_back_border: 'rgb(238, 238, 238)',
 
-    background: '#4EA5D9',
+    background: '#008198',
   },
 }
 
 ReactDOM.render(
   <React.StrictMode>
-    <GlobalStyles theme={theme.fifth_theme} />
+    <GlobalStyles theme={theme.main_theme} />
     <App />
   </React.StrictMode>,
   document.getElementById('root'),
