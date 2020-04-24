@@ -1,8 +1,13 @@
 import tagList from './tagList'
 
-const {greeting, ramadan, Eid, NewYears} = tagList
+const {greeting, ramadan, Eid, NewYears, funeral} = tagList
 
 export default [
+  {
+    phrase: 'احسن الله عزاكم',
+    response: 'لله البقاء',
+    tags: [funeral.tag],
+  },
   {
     phrase: 'كل عام وانت بخير',
     response: 'وانت بخير',
@@ -17,6 +22,61 @@ export default [
     phrase: 'من العايدين الفايزين',
     response: 'ما اعرف',
     tags: [Eid.tag],
+  },
+  {
+    phrase: 'السلام عليكم',
+    response: 'وعليكم السلام',
+    tags: [greeting.tag],
+  },
+  {
+    phrase: 'السلام عليكم',
+    response: 'وعليكم السلام',
+    tags: [greeting.tag],
+  },
+  {
+    phrase: 'السلام عليكم',
+    response: 'وعليكم السلام',
+    tags: [greeting.tag],
+  },
+  {
+    phrase: 'السلام عليكم',
+    response: 'وعليكم السلام',
+    tags: [greeting.tag],
+  },
+  {
+    phrase: 'السلام عليكم',
+    response: 'وعليكم السلام',
+    tags: [greeting.tag],
+  },
+  {
+    phrase: 'السلام عليكم',
+    response: 'وعليكم السلام',
+    tags: [greeting.tag],
+  },
+  {
+    phrase: 'السلام عليكم',
+    response: 'وعليكم السلام',
+    tags: [greeting.tag],
+  },
+  {
+    phrase: 'السلام عليكم',
+    response: 'وعليكم السلام',
+    tags: [greeting.tag],
+  },
+  {
+    phrase: 'السلام عليكم',
+    response: 'وعليكم السلام',
+    tags: [greeting.tag],
+  },
+  {
+    phrase: 'السلام عليكم',
+    response: 'وعليكم السلام',
+    tags: [greeting.tag],
+  },
+  {
+    phrase: 'السلام عليكم',
+    response: 'وعليكم السلام',
+    tags: [greeting.tag],
   },
   {
     phrase: 'السلام عليكم',

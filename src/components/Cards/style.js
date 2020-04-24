@@ -10,20 +10,24 @@ export const Cards = styled.ul`
 `
 
 export const CardFront = styled.div`
-  background-color: var(--yellow);
-  color: var(--black);
+  background-color: var(--card-front-background);
+  color: var(--card-front-text);
   padding: 8px 12px 8px 12px;
   margin: 8px;
   border-radius: 3px;
   font-size: 2em;
   cursor: pointer;
-  border: 1px solid rgb(238, 238, 238);
+  border: 1px solid var(--card-front-border);
   transform-style: preserve-3d;
 
   /* center text */
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: var(--card-front-text-underline);
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
 
   /* card size */
   width: 18rem;
@@ -32,20 +36,22 @@ export const CardFront = styled.div`
   z-index: 1;
 `
 export const CardBack = styled.div`
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--card-back-background);
+  color: var(--card-back-text);
   padding: 8px 12px 8px 12px;
   margin: 8px;
   border-radius: 3px;
   font-size: 2em;
   cursor: pointer;
-  border: 1px solid rgb(238, 238, 238);
+  border: 1px solid var(--card-back-border);
   transform-style: preserve-3d;
 
   /* center text */
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: var(--card-back-text-underline);
 
   /* card size */
   width: 18rem;
@@ -58,6 +64,7 @@ export const voiceActivator = styled.span`
   right: 80%;
   padding: 10px;
   z-index: 2;
+  text-shadow: none;
   &::before {
     content: '🔈';
   }
