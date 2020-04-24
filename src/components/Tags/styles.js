@@ -27,7 +27,7 @@ export const Tag = styled.label`
     background: var(--tag-background-highlighted);
     color: hsla(0, 100%, 0%, 0.8);
     color: var(--tag-text-highlighted);
-    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
   `}
 `

@@ -26,7 +26,7 @@ export const CardFront = styled.div`
   justify-content: center;
   text-decoration: underline;
   text-decoration-color: var(--card-front-text-underline);
-  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+  text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000, 1px 1px 0 #000;
 
   /* card size */
