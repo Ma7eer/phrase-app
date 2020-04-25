@@ -17,7 +17,7 @@ export const CardFront = styled.div`
   border-radius: 3px;
   font-size: 2em;
   cursor: pointer;
-  border: 1px solid var(--card-front-border);
+  border: 2px solid var(--card-front-border);
   transform-style: preserve-3d;
 
   /* center text */
@@ -43,7 +43,7 @@ export const CardBack = styled.div`
   border-radius: 3px;
   font-size: 2em;
   cursor: pointer;
-  border: 1px solid var(--card-back-border);
+  border: 2px solid var(--card-back-border);
   transform-style: preserve-3d;
 
   /* center text */
