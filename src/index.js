@@ -63,27 +63,6 @@ const theme = {
 
     background: '#009FB7',
   },
-  light_theme: {
-    header_text: 'white',
-
-    tag_background: '#14CBCB',
-    tag_text: 'black',
-    tag_background_highlighted: '#0390F5',
-    tag_text_highlighted: 'white',
-    tag_counter_background: 'white',
-    tag_counter_text: 'black',
-
-    card_front_background: '#0390F5',
-    card_front_text: 'white',
-    card_front_text_underline: '#14CBCB',
-    card_front_border: 'rgb(238, 238, 238)',
-    card_back_background: 'white',
-    card_back_text: 'black',
-    card_back_text_underline: '#14CBCB',
-    card_back_border: 'rgb(238, 238, 238)',
-
-    background: '#92CCF6',
-  },
   dark_theme: {
     header_text: 'white',
 
@@ -139,4 +118,4 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister()
+serviceWorker.register()
