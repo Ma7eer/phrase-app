@@ -35,7 +35,9 @@ body {
   font-family: 'Tajawal', sans-serif;
   text-align: center;
   scroll-behavior: smooth;
-  background-color: var(--background)
+  background-color: var(--background);
+  padding-right: 15px;
+  padding-left: 15px;
 }
 `
 
