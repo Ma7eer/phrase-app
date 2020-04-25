@@ -35,6 +35,10 @@ export default {
     tag: 'سنة جديدة',
     emoji: '👋',
   },
+  test: {
+    tag: 'test',
+    emoji: '👋',
+  },
   all: {
     tag: 'جميع العبارات',
     emoji: '👋',
