@@ -66,12 +66,6 @@ export const voiceActivator = styled.span`
   z-index: 2;
   text-shadow: none;
   &::before {
-    content: '🔈';
+    content: '${props => (props.status === 'playing' ? '🔊' : '🔈')}';
   }
 `
-
-// &:hover {
-//   &::before {
-//     content: '🔊';
-//   }
-// }
