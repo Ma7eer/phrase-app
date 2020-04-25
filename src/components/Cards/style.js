@@ -6,7 +6,7 @@ export const Cards = styled.ul`
   padding: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 `
 
 export const CardFront = styled.div`
@@ -68,9 +68,10 @@ export const voiceActivator = styled.span`
   &::before {
     content: '🔈';
   }
-  &:hover {
-    &::before {
-      content: '🔊';
-    }
-  }
 `
+
+// &:hover {
+//   &::before {
+//     content: '🔊';
+//   }
+// }

@@ -19,6 +19,7 @@ const CardsList = () => {
 
 const FlipCard = ({list, index}) => {
   const [isFlipped, setIsFlipped] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   const getVoice = (e, phrase) => {
     // to stop the parent onClick from triggering
@@ -57,19 +58,33 @@ const FlipCard = ({list, index}) => {
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" key={index}>
       <S.CardFront onClick={() => setIsFlipped(true)}>
         {list.phrase}
-        <S.voiceActivator
-          role="img"
-          aria-label="img"
-          onClick={e => getVoice(e, list.phrase)}
-        ></S.voiceActivator>
+        {isLoading ? (
+          <span>loading...</span>
+        ) : (
+          <S.voiceActivator
+            role="img"
+            aria-label="img"
+            title="اضغط لسماع مقطع صوتي"
+            onClick={e => {
+              setIsLoading(true)
+              getVoice(e, list.phrase)
+              setIsLoading(false)
+            }}
+          ></S.voiceActivator>
+        )}
       </S.CardFront>
       <S.CardBack onClick={() => setIsFlipped(false)}>
         {list.response}
-        <S.voiceActivator
-          role="img"
-          aria-label="img"
-          onClick={e => getVoice(e, list.response)}
-        ></S.voiceActivator>
+        {isLoading ? (
+          <span>loading...</span>
+        ) : (
+          <S.voiceActivator
+            role="img"
+            aria-label="img"
+            title="اضغط لسماع مقطع صوتي"
+            onClick={e => getVoice(e, list.response)}
+          ></S.voiceActivator>
+        )}
       </S.CardBack>
     </ReactCardFlip>
   )
