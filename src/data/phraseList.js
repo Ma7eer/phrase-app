@@ -53,4 +53,24 @@ export default [
     response: 'الله يِسَلْمَك',
     tags: [sicknessOrInjury.tag],
   },
+  {
+    phrase: 'كل سنة وانت طيب',
+    response: 'وانت طيب',
+    tags: [NewYears.tag],
+  },
+  {
+    phrase: 'عيدكم مبارك',
+    response: 'عيدكم مبارك',
+    tags: [Eid.tag],
+  },
+  {
+    phrase: 'رمضان مبارك',
+    response: 'رمضان مبارك',
+    tags: [ramadan.tag],
+  },
+  {
+    phrase: 'عظم الله اجركم',
+    response: '',
+    tags: [funeral.tag],
+  },
 ]
