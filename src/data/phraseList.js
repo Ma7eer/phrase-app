@@ -20,7 +20,7 @@ export default [
   },
   {
     phrase: 'كل عام وأنت بخير',
-    response: 'وأنت بخير',
+    response: 'وأنت بخير و بصحة و سلامة',
     tags: [ramadan.tag, Eid.tag, NewYears.tag],
   },
   {
@@ -72,5 +72,15 @@ export default [
     phrase: 'عظم الله اجركم',
     response: '',
     tags: [funeral.tag],
+  },
+  {
+    phrase: 'مو انت؟',
+    response: 'بخير و الحمد لله',
+    tags: [greeting.tag],
+  },
+  {
+    phrase: 'عساكم من عواده',
+    response: 'ينعاد علينا وعليكم بالخير',
+    tags: [Eid.tag],
   },
 ]
